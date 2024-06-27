@@ -7,6 +7,8 @@
 
 # Quiz Interativo em JavaScript
 
+pt
+
 Este projeto foi desenvolvido com o objetivo de aplicar minhas habilidades recém-adquiridas nas tecnologias HTML, CSS e JavaScript.
 
 O projeto consiste em um quiz interativo, cuja estrutura foi projetada para que:
@@ -17,4 +19,21 @@ O projeto consiste em um quiz interativo, cuja estrutura foi projetada para que:
 
 Desenvolvi o projeto desde a criação da interface no Figma até a implementação do JavaScript para dar funcionalidade ao quiz.
 
-**Veja o preojeto:** 
+##
+en
+
+Interactive Quiz in JavaScript
+
+This project was developed with the goal of applying my newly acquired skills in HTML, CSS, and JavaScript.
+
+The project consists of an interactive quiz, designed so that:
+
+* Each time it is started, a new sequence of questions is generated;
+  - An algorithm generates an array with a sequence of random numbers within the total number of questions in the "questions" array. These numbers are used as indices for the questions to be displayed.
+* The number of remaining questions, the percentage of correct answers, and the quiz progress bar are automatically adjusted according to the number of questions.
+
+I developed the project from the creation of the interface in Figma to the implementation of JavaScript to bring the quiz to life.
+
+##
+
+**Viwe:** 
