@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Quiz Aulas de Música</title>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="progress--bar"></div>
+    </div>
+
+    <section id="mainSection">
+        <div class="startQuiz">
+            <div class="contentStart">
+                <h1>QUIZ</h1>
+
+                <img src="assets/images/music.png" alt="" width="100px">
+                <p>Perguntas relacionadas ao conteúdo da apostilha de aulas de música do <b>Prof. Benício.</b></p>
+                <div class="buttonStart">
+                    <button class="button start">Iniciar<img src="assets/images/arrow-start.svg" alt="arrow-start" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÁREA DAS QUESTÕES 
+            Essa área fica oculta (display: none;) e só é mostrada através do JS. -->
+        <div class="areaQuestions">
+            <div class="currentQuestion">1 de 10</div>
+            <div class="contentQuestions">
+                <h1 class="question">O que é uma escala cromática?</h1>
+                <div class="options">...</div>
+                <div class="blockInteraction"></div>
+            </div>
+
+            <div class="responseStatus"></div>
+
+            <div class="questionsButtons">
+                <button class="restart button">Reiniciar</button>
+                <button class="toRespond button">Responder</button>
+                <button class="next button">Proxima<img src="assets/images/arrow-start.svg" alt="arrow-start" />
+                </button>
+            </div>
+        </div>
+
+        <!-- RESULTADO -->
+        <div class="resultArea">
+            <h1>QUIZ FINALIZADO</h1>
+            <div class="message"></div>
+
+            <div class="scoreboard">
+                <div class="scoreboard-correct">
+                    <img src="assets/images/icon-correct.svg" alt="icon-correct">
+                    <div class="numbers"></div>
+                    <div>Acertos</div>
+                </div>
+                <div class="scoreboard-incorrect">
+                    <img src="assets/images/icon-incorrect.svg" alt="icon-correct">
+                    <div class="numbers"></div>
+                    <div>Erros</div>
+                </div>
+            </div>
+            <button class="restart button">Reiniciar</button>
+
+        </div>
+    </section>
+
+    <script src="assets/js/message-arrays.js"></script>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

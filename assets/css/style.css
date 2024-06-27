@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #FE8718;
+    --var1: #FEDEC0;
+    --grayDark: #262626;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    font-family: "Inter", sans-serif;
+    padding: 15px;
+
+}
+
+/* BARRA DE PROGRESSO */
+.progress {
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.progress--bar {
+    background-color: var(--mainColor);
+    height: 100%;
+    transition: all ease .5s;
+}
+
+
+#mainSection {
+    display: flex;
+    max-width: 285px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px #26262657;
+}
+
+/* SEÇÃO START */
+.startQuiz {
+    /* display: none; */
+}
+
+.contentStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.startQuiz h1 {
+    font-size: 30px;
+}
+
+.startQuiz p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* SEÇÃO PERGUNTAS  */
+
+.areaQuestions {
+    display: none;
+}
+
+.currentQuestion {
+    display: inline-block;
+    background-color: var(--grayDark);
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.areaQuestions h1 {
+    font-family: "Merriweather", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.contentQuestions {
+    position: relative;
+}
+
+.blockInteraction {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    background-color: var(--var1);
+    padding: 8px 9px 8px 9px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option span {
+    padding: 5px 9px 5px 9px;
+    background-color: var(--grayDark);
+    border-radius: 15px;
+    color: #ffffff;
+    margin: 0 5px -5px 0;
+}
+
+.optionActive {
+    background-color: #f79c48;
+}
+
+.responseStatus {
+    padding: 0 35px;
+}
+
+.responseStatus-correct,
+.responseStatus-incorrect {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+
+
+.responseStatus-correct {
+    background-color: #D9F6C1;
+    color: #365926;
+}
+
+.responseStatus-incorrect {
+    background-color: #F6C1C1;
+    color: #592626;
+}
+
+
+/* SEÇÃO RESULTADO */
+
+.resultArea {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 0px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconMessage {
+    height: 33px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.scoreboard-correct,
+.scoreboard-incorrect {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+
+}
+
+.scoreboard-correct {
+    background-color: #D9F6C1;
+}
+
+.scoreboard-incorrect {
+    background-color: #F6C1C1;
+}
+
+.scoreboard img {
+    width: 35px;
+}
+
+.numbers {
+    font-size: 50px;
+}
+
+
+
+/* Botões */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px 10px 22px;
+    background-color: var(--grayDark);
+    border-style: none;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.questionsButtons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.next,
+.start {
+    gap: 5px;
+}
+
+.restart {
+    background-color: var(--grayDark);
+}
+
+.toRespond {
+    background-color: var(--mainColor)
+}
+
+.next {
+    display: none;
+}
+
+.restartButton {
+    display: flex;
+    justify-content: center;
+}
