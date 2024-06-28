@@ -40,7 +40,6 @@ function showQuestion() {
         return finishQuiz();
     }
 
-
     let percentage = Math.floor((valueProgress / questions.length * 100))
     document.querySelector('.progress--bar').style.width = `${percentage}%`;
 
@@ -75,6 +74,10 @@ function markedOption() {
 }
 
 function checkSelection() {
+    if (indexQuestion == (questions.length - 1)) {
+        document.querySelector('.next span').textContent = 'Finalizar';
+    }
+
     if (optionSelected !== null) {
         blockInteraction();
         if (optionSelected == questions[currentQuestion].answer) {
@@ -91,10 +94,11 @@ function checkSelection() {
 }
 
 function changeQuestion() {
-    // Função responsável por trocar a questão que será exibida.
+    // Função responsável por trocar a questão que será exibida. 
     optionSelected = null;
     indexQuestion++;
     currentQuestion = randomQuestionsIndex[indexQuestion];
+
     blockInteraction('off');
 
     valueProgress++;
@@ -135,6 +139,7 @@ function restart() {
     valueProgress = 0;
 
     document.querySelector('.resultArea').style.display = 'none';
+    document.querySelector('.next span').textContent = 'Próximo';
     blockInteraction('off');
     showQuestion()
 }
