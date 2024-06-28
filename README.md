@@ -36,4 +36,4 @@ I developed the project from the creation of the interface in Figma to the imple
 
 ##
 
-**Viwe:** <a href="https://isaquesantana.github.io/QuizInterativo/" taget="_blank">Click here</a>
+**Viwe:** <a href="https://isaquesantana.github.io/QuizInterativo/" target="_blank">Click here</a>
